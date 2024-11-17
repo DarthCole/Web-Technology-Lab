@@ -1,0 +1,130 @@
+<!-- 
+    AUTHOR: Kobina Kyereboah-Coleman
+    TODO: Log-In Page
+    DESCRIPTION: This is the login page for my "Flavors Unfolded" recipe blog website. 
+    Users enter their usernames and passwords to log in if they are already members, or they can navigate to the signup page if they are new.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        meta charset: Specifies the character encoding for the HTML document.
+        UTF-8 is the most common encoding type and is essential for handling text in different languages.
+    -->
+    <meta charset="UTF-8">
+    
+    <!-- 
+        meta viewport: This tag controls the layout on mobile browsers. 
+        Setting the width to device-width ensures that the page scales correctly on mobile devices. 
+        initial-scale=1.0 sets the initial zoom level to 1, ensuring the page loads at the natural size of the screen.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 
+        title: This tag sets the title of the web page, which will appear on the browser tab and search engine results.
+        "Flavors Unfolded - Login" helps users understand they are on the login page for the website.
+    -->
+    <title>Flavors Unfolded - Login</title>
+
+    <!-- 
+        link: Links an image for the website's favicon. 
+        The "index.svg" file contains the favicon for the website.
+    -->
+    <link rel="icon" href="../static/index.svg" type="image/svg+xml">
+
+    <!-- 
+        link: This tag links an external CSS stylesheet to the HTML file.
+        The 'href' attribute points to "styles.css", which contains all the CSS styling for the login page.
+    -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--
+        Include JavaScript for validation
+    -->
+    <script defer src="../js/validation.js"></script>
+
+</head>
+
+<body class="login-signup-body">
+    <!-- HEADER SECTION 
+        header: This section contains the website's title. The header is positioned at the top of the page.
+        It helps users identify which website they are interacting with. The <h1> tag is used to mark the primary heading.
+    -->
+    <header>
+        <h1>Flavors Unfolded</h1> <!-- Main website title (primary heading) -->
+    </header>
+
+    <!-- MAIN CONTENT SECTION -->
+    <!-- 
+        main: This section holds the main content of the page, specifically the login form. 
+        The main tag is used to define the core content of the document. This is important for SEO and accessibility.
+    -->
+    <main>
+        <!-- 
+            div with class "form-container": This container is used to wrap the form and manage its layout and styling.
+            The form container allows for the application of styles such as padding, background color, and positioning.
+        -->
+        <div class="form-container">
+
+            <!-- LOGIN FORM
+                form: This HTML tag defines the form element where users can input their credentials (username, password).
+                The 'action' attribute is set to "#" temporarily. When you have a backend for handling authentication,
+                the 'action' attribute will point to the relevant URL. 
+                The 'method' attribute is set to "post", which means the form data will be sent securely to the server.
+                aria-label is used to enhance accessibility, providing a label to the form for screen readers.
+            -->
+            <form id="login-form" class="form active" action="#" method="post" aria-label="Login Form">
+                
+                <!-- Form Heading -->
+                <h2>Login</h2> <!-- Secondary heading for the form, informing the user this is a login form. -->
+
+                <!-- EMAIL FIELD
+                    label: This tag provides a text label for the input field. The 'for' attribute associates the label 
+                    with the specific input field by matching its ID.
+                    input (text): The text input field for entering the username. The 'id' and 'name' attributes are 
+                    used to identify this field and process the data when submitted. 
+                    'placeholder' shows the default text inside the field, and 'required' makes the field mandatory.
+                -->
+                <label for="login-email">Email</label> <!-- Label for username input field -->
+                <input type="text" id="login-email" name="email" placeholder="user@example.com" required> <!-- Username input -->
+                <span id="email-error" class="error-message"></span> <!-- Placeholder for email validation errors -->
+
+                <!-- PASSWORD FIELD
+                    label: Label for the password input field, similar to the username field.
+                    input (password): This input type masks the characters the user types, ensuring privacy.
+                    'required' attribute ensures that the field cannot be left empty.
+                -->
+                <label for="login-password">Password</label> <!-- Label for password input field -->
+                <input type="password" id="login-password" name="password" placeholder="Type your password" required> <!-- Password input -->
+
+                <!-- SUBMIT BUTTON
+                    button: The form submission button. When clicked, it submits the form data to the server (or backend) 
+                    for processing. The 'class' attribute is used to apply button-specific styling.
+                -->
+                <button type="submit" class="btn">Login</button> <!-- Submit button for the login form -->
+            </form>
+
+            <!-- SIGN-UP LINK 
+                p.toggle-link: A paragraph containing a link for new users to navigate to the signup page.
+                The anchor tag (<a>) points to "signup.html", where users can register for an account. 
+                The link is styled for easy visibility and navigation.
+            -->
+            <p class="toggle-link">
+                Are You New To Flavors Unfolded? <a href="signup.html">Sign Up</a> <!-- Sign-up page link for new users -->
+            </p>
+
+        </div> <!-- End of form-container -->
+    </main>
+
+    <!-- FOOTER SECTION
+        footer: This section contains the copyright notice or any additional information that should appear
+        at the bottom of the page. In this case, it displays a copyright message for "Recipes From All Over The World."
+    -->
+    <footer>
+        <p>Recipes From All Over The World</p> <!-- Footer content: copyright notice -->
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!-- 
+    AUTHOR: Kobina Kyereboah-Coleman
+    TODO: Admin User Management Page
+    DESCRIPTION: This is the user CRUD page for my "Flavors Unfolded" recipe blog website. 
+    It allows administrators to manage recipes uploadied on the platform by members.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Flavors Unfolded</title>
+    <link rel="stylesheet" href="../css/admin-styles.css">
+
+    <link rel="icon" href="../static/index.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <h1>Flavors Unfolded</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="recipes.html">Recipe Management</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-management">
+            <h2>User Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list">
+                    <!-- Manually entered user data -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>
+                            <button onclick="editUser(1)">Edit</button>
+                            <button onclick="confirmDeletion(1)">Delete</button>
+                            <button onclick="viewMore(1, 'More info about John Doe')">View More</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <button onclick="editUser(2)">Edit</button>
+                            <button onclick="confirmDeletion(2)">Delete</button>
+                            <button onclick="viewMore(2, 'More info about Jane Smith')">View More</button>
+                        </td>
+                    </tr>
+                    <!-- Add other users similarly -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Modal for Viewing More Details -->
+        <div id="viewMoreModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>User Details</h3>
+                <p id="user-details"></p>
+            </div>
+        </div>
+
+        <!-- Edit User Form -->
+        <section id="edit-user-section">
+            <h2>Edit User</h2>
+            <form id="edit-user-form">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="name" required>
+                <span id="name-error" class="error"></span>
+
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="email" required>
+                <span id="email-error" class="error"></span>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/admin-scripts.js"></script> <!-- Link to your JS file for CRUD operations -->
+
+</body>
+</html>

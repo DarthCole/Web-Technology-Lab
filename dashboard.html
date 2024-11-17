@@ -1,0 +1,81 @@
+<!-- 
+    AUTHOR: Kobina Kyereboah-Coleman
+    TODO: Admin Dashboard Page
+    DESCRIPTION: This is the dashboard page for my "Flavors Unfolded" recipe blog website. 
+    It allows administrators to manage and oversee various aspects of the platform.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Flavors Unfolded</title>
+    
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="../css/admin-styles.css">
+
+    <!-- Link to Chart.js library for rendering charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- 
+        link: Links an image for the website's favicon.
+        The "index.svg" file contains the favicon for the website.
+    -->
+    <link rel="icon" href="../static/index.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Page Header with Navigation Links -->
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="users.html">User Management</a>
+            <a href="recipes.html">Recipe Management</a>
+        </nav>
+    </header>
+
+    <!-- Home Button linking back to the index page -->
+    <a href="index.html" class="btn admin-dashboard-link" style="position: absolute; top: 10px; left: 10px;">
+        Home
+    </a>
+
+    <!-- Main Content Area for Analytics -->
+    <main>
+        <section id="analytics">
+            <h2>Analytics</h2>
+
+            <!-- Section displaying total users and recipes along with a bar chart -->
+            <div class="analytics-card">
+                <p>Total Users: <span id="total-users">150</span></p>
+                <p>Total Recipes: <span id="total-recipes">120</span></p>
+                <canvas id="recipeChart"></canvas> <!-- Bar chart for recipes created per month -->
+
+                <!-- Displaying the top active users by the number of recipes -->
+                <h3>Top Active Users</h3>
+                <ol id="top-users">
+                    <li>Jade Pearce - 109 Recipes</li>
+                    <li>Laurence Mailhot - 81 Recipes</li>
+                    <li>Beatrice Santos Pereira - 72 Recipes</li>
+                </ol>
+            </div>
+
+            <!-- Section displaying charts for user demographics and membership growth -->
+            <div class="chart-container">
+                <div class="chart-item">
+                    <h3>User Demographics by Country</h3>
+                    <canvas id="userCountryChart" width="300" height="300"></canvas>
+                </div>
+
+                <div class="chart-item">
+                    <h3>Membership Growth for the Past 6 Months</h3>
+                    <canvas id="membershipGrowthChart" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to the JavaScript file for dashboard functionalities -->
+    <script src="../js/admin-scripts.js"></script>
+</body>
+</html>

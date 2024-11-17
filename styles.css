@@ -1,0 +1,349 @@
+/* -------------------------------------------------
+    General Reset: 
+    This block resets the default margins and paddings applied by browsers 
+    to ensure consistency across different browsers. 
+    'box-sizing: border-box' ensures padding and border are included within 
+    the element's total width and height. Default font-family is Arial.
+------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Sets Arial as the default font */
+}
+
+/* -------------------------------------------------
+    Header Styling: 
+    Applies flexbox for vertical and horizontal centering. 
+    Makes the header take the full width of the page with space below.
+------------------------------------------------- */
+header {
+    width: 100%; /* Full width of the page */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 20px; /* Space between header and content */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Header h1 Styling */
+header h1 {
+    font-family: 'Arial', sans-serif; /* Specifies Arial font */
+    color: #000000; /* Black text */
+    font-size: 36px; /* Large font size */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center text */
+}
+
+/* Styling for the index page welcome message */
+.welcome-message {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-message h1, .welcome-message p {
+    color: white; /* Make the heading and paragraph text white */
+    font-size: 48px; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.welcome-message p {
+    font-size: 20px; /* Paragraph font size */
+    line-height: 1.6; /* Line spacing */
+}
+
+/* -------------------------------------------------
+    Body and Background: 
+    Styling to ensure the body content is centered 
+    with a full background image and flexbox layout.
+------------------------------------------------- */
+body {
+    background-image: url("../static/login-signup-bg.jpg"); /* Background image URL */
+    background-size: cover; /* Cover the full page */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    flex-direction: column; /* Stack header and form container vertically */
+    color: #333; /* Default text color */
+}
+
+/* -------------------------------------------------
+    Container Styling:
+    Applies layout and styling to the login/signup form container.
+    Uses flexbox to center items and give a semi-transparent background.
+------------------------------------------------- */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    padding: 40px; /* Padding inside container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width of container */
+    display: flex; /* Flexbox layout */
+    max-width: 400px; /* Limit container width */
+    text-align: center; /* Center text */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* -------------------------------------------------
+    Form Styling:
+    Adds space between form elements and defines label, 
+    input fields, and button styling.
+------------------------------------------------- */
+form {
+    margin: 20px 0; /* Vertical spacing around form */
+}
+
+/* Form Heading Styling */
+h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark gray text */
+}
+
+/* Label Styling */
+label {
+    display: block; /* Full-width label */
+    text-align: left; /* Left-align the label */
+    margin-bottom: 5px; /* Space below label */
+    font-size: 14px; /* Font size */
+    color: #333; /* Dark gray text */
+}
+
+/* Input Field Styling */
+input {
+    width: 100%; /* Full width of container */
+    padding: 10px; /* Padding inside input */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+}
+
+/* -------------------------------------------------
+    Button Styling:
+    Buttons with hover effect and a prominent green color scheme.
+------------------------------------------------- */
+button.btn {
+    width: 100%; /* Full width of container */
+    padding: 12px; /* Padding inside button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button Hover Effect */
+button.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* -------------------------------------------------
+    Toggle Link Styling:
+    Styled link that toggles between login and sign-up forms.
+    Includes hover effect.
+------------------------------------------------- */
+.toggle-link {
+    font-size: 14px; /* Font size for the toggle link */
+    margin-top: 15px; /* Space above toggle link */
+}
+
+.toggle-link a {
+    color: #007bff; /* Blue text */
+    text-decoration: none; /* No underline by default */
+    font-weight: bold; /* Bold text */
+}
+
+.toggle-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* -------------------------------------------------
+    Footer Styling:
+    The footer content is centered with flexbox, 
+    and space is added above it.
+------------------------------------------------- */
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
+    font-size: 12px; /* Small font size */
+    color: #fff; /* White text */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack footer elements vertically */
+}
+
+/* -------------------------------------------------
+    Responsive Design:
+    Adjusts padding for smaller screens (max-width 480px).
+------------------------------------------------- */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+}
+
+/* -------------------------------------------------
+    Background Styling:
+    Different background images for login/signup, index, 
+    and recipe feed pages.
+------------------------------------------------- */
+/* Login and Sign-Up Pages Background */
+.login-signup-body {
+    background-image: url("../static/login-signup-bg.jpg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Index Page Background */
+.index-body {
+    background-image: url("../static/home-bg.jpg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Recipe Feed Page Background */
+.recipe-feed-body {
+    background-image: url("../static/recipe-feed-bg.jpg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* -------------------------------------------------
+    Index Page Specific Styling:
+    Styling for welcome message and call-to-action buttons.
+------------------------------------------------- */
+.landing-intro {
+    text-align: center; /* Center text */
+    margin-top: 50px; /* Space above intro */
+}
+
+.cta-buttons {
+    display: flex; /* Flexbox for buttons */
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.welcome-message h1 {
+    font-size: 48px; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.welcome-message p {
+    font-size: 20px; /* Paragraph font size */
+    line-height: 1.6; /* Line spacing */
+}
+
+/* Button Styling (Index Page) */
+.btn {
+    background-color: #ff9800; /* Orange background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #e67e00; /* Darker orange on hover */
+}
+
+/* Get Started Button Styling */
+.get-started {
+    background-color: #ff9800;
+}
+
+.get-started:hover {
+    background-color: #e67e00; /* Darker on hover */
+}
+
+/* -------------------------------------------------
+    Recipe Feed Page:
+    Recipe search and grid layout for recipe cards.
+------------------------------------------------- */
+.recipe-search {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Space around search bar */
+}
+
+#search-bar {
+    padding: 10px; /* Padding inside search bar */
+    width: 80%; /* Search bar width */
+    max-width: 600px; /* Max width */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Recipe Grid Layout */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around grid */
+    grid-template-rows: auto; /* Auto height rows */
+}
+
+.recipe-card {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside card */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease; /* Zoom effect on hover */
+}
+
+/* Image inside recipe card */
+.recipe-card img {
+    max-width: 100%; /* Full width image */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.admin-dashboard-link {
+    background-color: #43aec9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-dashboard-link:hover {
+    background-color: #43aec9;
+}

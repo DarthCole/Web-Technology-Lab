@@ -1,0 +1,322 @@
+/* -------------------------------------------------
+    General Reset and Global Styles:
+    Resets default margins and paddings across browsers
+    and applies global styles like font and background color.
+------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------
+    Header Styles:
+    This block styles the page header, making it center-aligned 
+    with a background color and padding.
+------------------------------------------------- */
+header {
+    background-color: #43aec9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* -------------------------------------------------
+    Main and Section Styling:
+    General styles for main content and sections, 
+    including padding and spacing between sections.
+------------------------------------------------- */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------------------
+    Headings:
+    Adds a border under the h2 heading and margin 
+    for visual separation of sections.
+------------------------------------------------- */
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------
+    Table Styling:
+    This section styles the tables used for displaying data.
+    It includes styles for table, headers, and cells.
+------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Styling for table borders, headers, and cells */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Padding and alignment for table cells */
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Styling for table header cells */
+th {
+    background-color: #43aec9;
+    color: white;
+}
+
+/* -------------------------------------------------
+    Button Styling:
+    This block styles the buttons used in the admin panel.
+    Buttons change color on hover with smooth transitions.
+------------------------------------------------- */
+button {
+    background-color: #43aec9;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button background color when hovering */
+button:hover {
+    background-color: #62bbcf;
+}
+
+/* -------------------------------------------------
+    Edit User Form Modal Styles:
+    Styling for the modal pop-up that allows admins to edit user details.
+------------------------------------------------- */
+#editUserModal, #viewMoreModal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------
+    Edit Form Styling:
+    This block styles the form used to edit user information.
+------------------------------------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Error message styling for form validation */
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* -------------------------------------------------
+    Delete Confirmation Dialog:
+    Styles for the JavaScript confirmation prompt.
+------------------------------------------------- */
+.confirmation-dialog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------------
+    Analytics Section:
+    Styling for the analytics card that displays statistics on the admin dashboard.
+------------------------------------------------- */
+#analytics {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------
+    Chart Styling:
+    Styles the charts used in the dashboard.
+------------------------------------------------- */
+
+/* Adds margin above the chart */
+canvas {
+    margin-top: 20px;
+}
+
+/* Flexbox container to organize charts side by side */
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Each chart will take equal space in the flexbox */
+.chart-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* Maximum size for the charts */
+#userCountryChart, #membershipGrowthChart {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+/* -------------------------------------------------
+    Responsive Design:
+    Ensures the layout adapts to smaller screen sizes.
+------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* -------------------------------------------------
+    Admin Dashboard Link Button:
+    Styles for the 'Home' button in the admin dashboard.
+------------------------------------------------- */
+.admin-dashboard-link {
+    background-color: #43aec9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-dashboard-link:hover {
+    background-color: #62bbcf;
+}
+
+/* -------------------------------------------------
+    Modal Styling for "View More" Feature:
+    Additional styles for the modal used to view more user details.
+------------------------------------------------- */
+#viewMoreModal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#viewMoreModal .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for content inside the modal */
+#user-details {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Recipe Form Styling */
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-form input, .recipe-form textarea, .recipe-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.recipe-form button {
+    background-color: #43aec9;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-form button:hover {
+    background-color: #62bbcf;
+}
+
+/* Styling for Recipe List Table */
+#recipe-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#recipe-list th, #recipe-list td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+#recipe-list th {
+    background-color: #43aec9;
+    color: white;
+}

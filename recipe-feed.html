@@ -1,0 +1,117 @@
+<!-- 
+    AUTHOR: Kobina Kyereboah-Coleman
+    TODO: Recipe-Feed Page 
+    DESCRIPTION: This is the recipe feed page for my "Flavors Unfolded" recipe blog website. 
+    Members can browse through a selection of recipes uploaded by the community.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        meta charset: Defines the character encoding for the HTML document. 
+        UTF-8 supports almost all characters and is the most widely used encoding.
+    -->
+    <meta charset="UTF-8">
+
+    <!-- 
+        meta viewport: Optimizes the page layout for different devices. 
+        The width is set to the device's width to ensure proper scaling on mobile devices.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 
+        title: Defines the title of the web page, shown in the browser tab and search results. 
+        "Flavors Unfolded - Recipe Feed" indicates that the page displays a collection of recipes.
+    -->
+    <title>Flavors Unfolded - Recipe Feed</title>
+
+    <!-- 
+        link: Links an image for the website's favicon. 
+        The "index.svg" file contains the favicon for the website.
+    -->
+    <link rel="icon" href="../static/index.svg" type="image/svg+xml">
+
+    <!-- 
+        link: Links to an external CSS file for styling the recipe feed page. 
+        The CSS file defines the appearance of the elements on the page.
+    -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="recipe-feed-body">
+    <!-- Body class defines the background for the recipe feed page using external CSS -->
+
+    <!-- Header with the title of the page -->
+    <header>
+        <h1>Recipe Feed</h1> <!-- Main heading for the recipe feed page -->
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Recipe search section: Allows users to search for specific recipes -->
+        <section class="recipe-search">
+            <!-- Input field for searching recipes by keyword -->
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </section>
+
+        <!-- Recipe grid: Displays a grid of recipes with images, descriptions, and ratings -->
+        <section class="recipe-grid">
+            <!-- Recipe card 1 -->
+            <div class="recipe-card">
+                <img src="../static/jollof.jpg" alt="Jollof"> <!-- Image of the recipe -->
+                <h3>Jollof</h3> <!-- Recipe title -->
+                <p>A classic and delicious and easy-to-make dish.</p> <!-- Recipe description -->
+                <p>Rating: ★★★★☆</p> <!-- Recipe rating -->
+            </div>
+
+            <!-- Recipe card 2 -->
+            <div class="recipe-card">
+                <img src="../static/polenta.jpg" alt="Italian Polenta"> <!-- Image of the recipe -->
+                <h3>Italian Polenta</h3> <!-- Recipe title -->
+                <p>A classic recipe with a modern twist.</p> <!-- Recipe description -->
+                <p>Rating: ★★★☆☆</p> <!-- Recipe rating -->
+            </div>
+
+            <!-- Recipe card 3 -->
+            <div class="recipe-card">
+                <img src="../static/ragu.jpg" alt="Ragu"> <!-- Image of the recipe -->
+                <h3>Ragu</h3> <!-- Recipe title -->
+                <p>A savory delight that’s sure to please.</p> <!-- Recipe description -->
+                <p>Rating: ★★★★★</p> <!-- Recipe rating -->
+            </div>
+
+            <!-- Recipe card 4 -->
+            <div class="recipe-card">
+                <img src="../static/scrambbled_egg_fried_rice.jpg" alt="Scrambbled Egg Fried Rice"> <!-- Image of the recipe -->
+                <h3>Scrambbled Egg Fried Rice</h3> <!-- Recipe title -->
+                <p>Perfect for a quick weeknight dinner.</p> <!-- Recipe description -->
+                <p>Rating: ★★★☆☆</p> <!-- Recipe rating -->
+            </div>
+
+            <!-- Recipe card 5 -->
+            <div class="recipe-card">
+                <img src="../static/waakye.jpg" alt="Waakye"> <!-- Image of the recipe -->
+                <h3>Waakye</h3> <!-- Recipe title -->
+                <p>A rich and flavorful dish to impress guests.</p> <!-- Recipe description -->
+                <p>Rating: ★★★★☆</p> <!-- Recipe rating -->
+            </div>
+
+            <!-- Recipe card 6 -->
+            <div class="recipe-card">
+                <img src="../static/vienbu.jpg" alt="Vienbu"> <!-- Image of the recipe -->
+                <h3>Vienbu</h3> <!-- Recipe title -->
+                <p>A light and healthy meal option.</p> <!-- Recipe description -->
+                <p>Rating: ★★★☆☆</p> <!-- Recipe rating -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>© 2024 Recipes From All Over The World</p>
+    </footer>
+</body>
+
+</html>

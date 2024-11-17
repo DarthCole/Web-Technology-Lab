@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: Zapfino, Zapfino;
+        font-size: 200px;
+      }
+
+      .cls-2 {
+        fill: #fdcf57;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="256" cy="256" r="238.41"/>
+  <text/>
+  <text class="cls-1" transform="translate(104.2 362.43)"><tspan x="0" y="0">F</tspan></text>
+</svg>
