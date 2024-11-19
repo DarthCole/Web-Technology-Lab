@@ -31,7 +31,7 @@
         link: Links an image for the website's favicon. 
         The "index.svg" file contains the favicon for the website.
     -->
-    <link rel="icon" href="../static/index.svg" type="image/svg+xml">
+    <link rel="icon" href="../assets/index.svg" type="image/svg+xml">
 
     <!-- 
         link: Links an external CSS stylesheet to the HTML document. 
@@ -39,25 +39,21 @@
     -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<header>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <!-- Logo or Branding (optional, if needed) -->
-            <div class="logo">RecipeShare</div> <!-- Example logo text -->
-
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="login.html" class="btn">Login</a></li>
-                <li><a href="signup.html" class="btn">Sign Up</a></li>
-                <li><a href="recipe-feed.html" class="btn get-started">Explore</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
 
 <body class="index-body">
-    <!-- Body class defines the background for the index page using external CSS -->
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">Flavors Unfolded</div>
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Button to Admin Dashboard -->
     <a href="dashboard.html" class="btn admin-dashboard-link" style="position: absolute; top: 10px; right: 10px;">
