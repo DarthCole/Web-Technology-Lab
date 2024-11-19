@@ -1,0 +1,124 @@
+/* General reset and body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../images/login-signup-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(40, 39, 39, 0.368);
+    margin-bottom: auto;
+}
+
+.navbar .logo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    font-size: 1.5rem;
+    font-weight: regular;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Form container styling */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form element styling */
+form {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #218838;
+}
+
+.toggle-link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.toggle-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toggle-link a:hover {
+    text-decoration: underline;
+}
