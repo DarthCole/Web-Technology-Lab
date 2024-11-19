@@ -41,9 +41,10 @@ header {
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: regular;
     color: white;
+    margin-right: 1000px;
 }
 
 .nav-links {
@@ -52,7 +53,7 @@ header {
     padding: 0;
     display: flex;
     gap: 10rem;
-    margin-left: auto; /* Pushes the links to the right */
+    margin-left: 400px; /* Pushes the links to the right */
 }
 
 .nav-links li {
