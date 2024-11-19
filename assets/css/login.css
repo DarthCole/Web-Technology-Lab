@@ -19,9 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background: rgba(40, 39, 39, 0.368);
-    margin-bottom: auto;
+    margin: 0;
 }
 
 .navbar .logo {
