@@ -27,6 +27,66 @@ header {
     flex-direction: column; /* Stack items vertically */
 }
 
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a.btn {
+    background-color: #007BFF; /* Default button color */
+    color: white;
+}
+
+.nav-links a.get-started {
+    background-color: #28a745; /* Different color for the "Explore" button */
+    color: white;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3; /* Hover effect */
+}
+
+.nav-links a.get-started:hover {
+    background-color: #218838; /* Hover effect for "Explore" */
+}
+
 /* Header h1 Styling */
 header h1 {
     font-family: 'Arial', sans-serif; /* Specifies Arial font */

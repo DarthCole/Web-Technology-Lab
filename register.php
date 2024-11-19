@@ -7,9 +7,8 @@ require 'config.php'; // Database configuration and connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form input and trim whitespace
-    $fname = trim($_POST['name']);
-    $lname = trim($_POST['lastname']);
-    $country = trim($_POST['country']);
+    $fname = trim($_POST['fname']);
+    $lname = trim($_POST['lname']);
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
@@ -21,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Server-side validation
     if (empty($fname)) {
-        $errors[] = "Name is required.";
+        $errors[] = "First name is required.";
     }
     if (empty($lname)) {
         $errors[] = "Last name is required.";

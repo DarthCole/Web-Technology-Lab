@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($errors)) {
         // Proceed with other logic if no errors
+        
     } else {
         foreach ($errors as $error) {
             echo "<p>$error</p>"; // Display error messages
