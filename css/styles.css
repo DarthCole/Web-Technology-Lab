@@ -51,7 +51,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 10rem;
     margin-left: auto; /* Pushes the links to the right */
 }
 
