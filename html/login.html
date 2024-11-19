@@ -77,49 +77,26 @@
         -->
         <div class="form-container">
 
-            <!-- LOGIN FORM
-                form: This HTML tag defines the form element where users can input their credentials (username, password).
-                The 'action' attribute is set to "#" temporarily. When you have a backend for handling authentication,
-                the 'action' attribute will point to the relevant URL. 
-                The 'method' attribute is set to "post", which means the form data will be sent securely to the server.
-                aria-label is used to enhance accessibility, providing a label to the form for screen readers.
-            -->
+            <!-- LOGIN FORM-->
             <form id="login-form" class="form active" action="#" method="post" aria-label="Login Form">
                 
                 <!-- Form Heading -->
                 <h2>Login</h2> <!-- Secondary heading for the form, informing the user this is a login form. -->
 
-                <!-- EMAIL FIELD
-                    label: This tag provides a text label for the input field. The 'for' attribute associates the label 
-                    with the specific input field by matching its ID.
-                    input (text): The text input field for entering the username. The 'id' and 'name' attributes are 
-                    used to identify this field and process the data when submitted. 
-                    'placeholder' shows the default text inside the field, and 'required' makes the field mandatory.
-                -->
+                <!-- EMAIL FIELD -->
                 <label for="login-email">Email</label> <!-- Label for username input field -->
                 <input type="text" id="login-email" name="email" placeholder="user@example.com" required> <!-- Username input -->
                 <span id="email-error" class="error-message"></span> <!-- Placeholder for email validation errors -->
 
-                <!-- PASSWORD FIELD
-                    label: Label for the password input field, similar to the username field.
-                    input (password): This input type masks the characters the user types, ensuring privacy.
-                    'required' attribute ensures that the field cannot be left empty.
-                -->
+                <!-- PASSWORD FIELD-->
                 <label for="login-password">Password</label> <!-- Label for password input field -->
                 <input type="password" id="login-password" name="password" placeholder="Type your password" required> <!-- Password input -->
 
-                <!-- SUBMIT BUTTON
-                    button: The form submission button. When clicked, it submits the form data to the server (or backend) 
-                    for processing. The 'class' attribute is used to apply button-specific styling.
-                -->
+                <!-- SUBMIT BUTTON-->
                 <button type="submit" class="btn">Login</button> <!-- Submit button for the login form -->
             </form>
 
-            <!-- SIGN-UP LINK 
-                p.toggle-link: A paragraph containing a link for new users to navigate to the signup page.
-                The anchor tag (<a>) points to "signup.html", where users can register for an account. 
-                The link is styled for easy visibility and navigation.
-            -->
+            <!-- SIGN-UP LINK -->
             <p class="toggle-link">
                 Are You New To Flavors Unfolded? <a href="../html/register.html">Sign Up</a> <!-- Sign-up page link for new users -->
             </p>
