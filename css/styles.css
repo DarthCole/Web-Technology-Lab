@@ -52,6 +52,7 @@ header {
     padding: 0;
     display: flex;
     gap: 1rem;
+    margin-left: auto; /* Pushes the links to the right */
 }
 
 .nav-links li {
