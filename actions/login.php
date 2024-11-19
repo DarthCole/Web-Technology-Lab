@@ -1,4 +1,7 @@
 <?php
+/**
+ * AUTHOR: Kobina Kyereboah-Coleman
+ */
 session_start();
 require 'config.php'; // Database configuration and connection file
 

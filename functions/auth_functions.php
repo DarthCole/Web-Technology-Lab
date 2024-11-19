@@ -1,4 +1,5 @@
 <?php
+require_once '../db/config.php';
 function registerUser($fname, $lname, $username, $email, $password, $role = 2) {
     $conn = connectDB();
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
