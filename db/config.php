@@ -1,15 +1,17 @@
 <?php
-// Local configuration for database connection
-$servername = "localhost"; // Or your remote server address
-$username = "kobina.coleman";
-$password = "passwird2";
-$dbname = "webtech_fall2024_kobina_coleman";
+// Database connection using PDO (recommended for prepared statements)
+function connectDB() {
+    $host = 'localhost'; // Database host
+    $dbname = 'webtech_fall2024_kobina_coleman'; // Your database name
+    $username = 'kobina.coleman'; // Your database username
+    $password = 'passwird2'; // Your database password
 
-// Create a new connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verify whether or not the connection was successful
-if ($conn->connect_error) {
-    die("Connection Failed: " . $conn->connect_error);
+    try {
+        $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conn;
+    } catch (PDOException $e) {
+        die("Database connection failed: " . $e->getMessage());
+    }
 }
 ?>

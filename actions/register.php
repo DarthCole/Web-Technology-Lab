@@ -3,7 +3,7 @@
  * AUTHOR: Kobina Kyereboah-Coleman
  */
 session_start();
-require 'database.php'; // Include the database connection file
+require 'config.php'; // Include the database connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = trim($_POST['firstname']);
