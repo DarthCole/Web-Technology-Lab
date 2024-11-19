@@ -13,7 +13,7 @@ body {
     align-items: center;
     padding: 1rem;
     background: rgba(40, 39, 39, 0.368);
-    margin-bottom: 0;
+    margin-bottom: auto;
 }
 
 .navbar .logo {

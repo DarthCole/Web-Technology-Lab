@@ -57,11 +57,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $errors[] = "The email address is already registered.";
             } else {
                 // Insert new user using prepared statements
-                $stmt = $conn->prepare("INSERT INTO users (name, lastname, country, username, email, password, role, created_at, updated_at) 
-                                        VALUES (:name, :lastname, :country, :username, :email, :password, :role, :created_at, :updated_at)");
-                $stmt->bindParam(':name', $Fname);
-                $stmt->bindParam(':lastname', $Lname);
-                $stmt->bindParam(':country', $country);
+                $stmt = $conn->prepare("INSERT INTO users (fname, lname, username, email, password, role, created_at, updated_at) 
+                                        VALUES (:fname, :lname, :username, :email, :password, :role, :created_at, :updated_at)");
+                $stmt->bindParam(':fname', $fname);
+                $stmt->bindParam(':lname', $lname);
                 $stmt->bindParam(':username', $username);
                 $stmt->bindParam(':email', $email);
                 $stmt->bindParam(':password', $hashed_password);
